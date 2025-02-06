@@ -1,0 +1,12 @@
+Menu q te va a llevar las diferentes secciones
+https://youtu.be/TCwmXY_f-e0 --> Video de inicio de fondo
+Breve introduccion sobre la serie y un boton q te lleve al trailer
+imagenes de algunos personajes que si pulsas en saber mas en cada uno te lleva a mas info suya
+explicacion sobre los anillos
+
+
+
+
+
+
+https://codepen.io/ --> Mirar ideas para añadir
