@@ -4,34 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Los Anillos del Poder</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-gray-900 text-white">
-    <header class="bg-gray-800 p-5 text-center text-2xl font-bold">
-        Los Anillos del Poder
+<style type="text/tailwindcss">
+    @theme{
+        --color-clifor-100: rgb(155,155,0);
+    }
+</style>
+<body class="bg-gray-900 text-clifor-100">
+    <header class="bg-gray-700 p-5 text-center ">
+        <nav class="py-4">
+            <div class="container mx-auto flex justify-between">
+                <img src="./img/logo2.png" class="w-30 h-30">
+                <ul class="">
+                    <li><a href="#Principales" class="hover:text-yellow-500">Principales</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Historia</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Personajes</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        
     </header>
     
     <main class="container mx-auto p-8 text-center">
-        <section class="mb-10">
+        <!-- Video de fondo -->
+        
+
+        <section class="mb-100">
+            <div class=" w-full h-60 z-0 flex justify-center autoplay ">
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/5IcoPgXMUDA" title="El Señor de los Anillos: Los Anillos de Poder | Prime Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+             </div>
+            
             <h1 class="text-4xl font-bold mb-4">Explora la Tierra Media</h1>
             <p class="text-lg text-gray-400">Sumérgete en la épica historia de los Anillos de Poder, donde la lucha entre la luz y la oscuridad define el destino de todos.</p>
-            <a href="#" class="mt-6 inline-block bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-lg">Ver más</a>
+            <a href="https://youtu.be/TCwmXY_f-e0" class="mt-6 inline-block bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-lg">Ver más</a>
         </section>
         
-        <section class="grid md:grid-cols-3 gap-6">
+        <section id ="Principales" class="grid md:grid-cols-3 gap-6">
             <div class="bg-gray-800 p-5 rounded-lg">
-                <img src="https://via.placeholder.com/300" alt="Galadriel" class="w-full h-48 object-cover rounded-lg">
+                <img src="./img/Galadriel.jpg" alt="Galadriel" class="w-full h-100 object-cover rounded-lg blur-sm hover:blur-none">
                 <h2 class="text-xl font-semibold mt-3">Galadriel</h2>
                 <p class="text-gray-400">La líder de los elfos en su lucha contra la oscuridad.</p>
             </div>
             <div class="bg-gray-800 p-5 rounded-lg">
-                <img src="https://via.placeholder.com/300" alt="Sauron" class="w-full h-48 object-cover rounded-lg">
+                <img src="./img/Sauron.png" alt="Sauron" class="w-full h-100 object-cover rounded-lg blur-sm hover:blur-none">
                 <h2 class="text-xl font-semibold mt-3">Sauron</h2>
                 <p class="text-gray-400">El Señor Oscuro que forjó los Anillos de Poder.</p>
             </div>
             <div class="bg-gray-800 p-5 rounded-lg">
-                <img src="https://via.placeholder.com/300" alt="Elrond" class="w-full h-48 object-cover rounded-lg">
-                <h2 class="text-xl font-semibold mt-3">Elrond</h2>
+                <img src="./img/Extraño.jpeg" alt="Elrond" class="w-full h-100 object-cover rounded-lg blur-sm hover:blur-none">
+                <h2 class="text-xl font-semibold mt-3">Extraño</h2>
                 <p class="text-gray-400">Un elfo sabio y estratega en tiempos de guerra.</p>
             </div>
         </section>
