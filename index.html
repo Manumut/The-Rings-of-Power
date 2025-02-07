@@ -8,10 +8,11 @@
 </head>
 <style type="text/tailwindcss">
     @theme{
-        --color-clifor-100: rgb(155,155,0);
+        --color-clifor: rgb(155,155,0);
+        --color-video: rgb(229, 224, 124);
     }
 </style>
-<body class="bg-gray-900 text-clifor-100">
+<body class="bg-gray-900 text-clifor">
     <header class="bg-gray-700 p-5 text-center ">
         <nav class="py-4">
             <div class="container mx-auto flex justify-between">
@@ -33,29 +34,41 @@
 
         <section class="mb-100 text-center">
             <div class=" w-full h-60 z-0 flex justify-center autoplay ">
-                <iframe width="1280" height="720" src="https://www.youtube.com/embed/5IcoPgXMUDA" title="El Señor de los Anillos: Los Anillos de Poder | Prime Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/lXuWnfnZmhA" title="Rings of Power (2022) Opening Credits (GH)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
              </div>
             
             <h1 class="text-4xl font-bold mb-4">Explora la Tierra Media</h1>
-            <p class="text-lg text-gray-400">Sumérgete en la épica historia de los Anillos de Poder, donde la lucha entre la luz y la oscuridad define el destino de todos.</p>
-            <a href="https://youtu.be/TCwmXY_f-e0" class="mt-6 inline-block bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-lg">Ver más</a>
+            <p class="text-lg font-bold bg-gradient-to-r from-video via-slate-200 to-stone-800 inline-block text-transparent bg-clip-text">Sumérgete en la épica historia de los Anillos de Poder, donde la lucha entre la luz y la oscuridad define el destino de todos.</p>
+            <a href="https://youtu.be/TCwmXY_f-e0" class="mt-6 inline-block bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-lg">Ver trailer</a>
         </section>
         
-        <section id ="Principales" class="grid md:grid-cols-3 gap-6">
+        <section id ="Principales" class="grid lg:grid-cols-4 md:grid-cols-2 gap-6">
             <div class="bg-gray-800 p-5 rounded-lg">
                 <img src="./img/Galadriel.jpg" alt="Galadriel" class="w-full h-100 object-cover rounded-lg blur-sm hover:blur-none">
                 <h2 class="text-xl font-semibold mt-3">Galadriel</h2>
-                <p class="text-gray-400">La líder de los elfos en su lucha contra la oscuridad.</p>
+                <p class="text-gray-400">La líder de los elfos contra la oscuridad.</p>
+                <a href="#" class="mt-6 inline-block bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-lg">Conoce más de mi</a>
             </div>
             <div class="bg-gray-800 p-5 rounded-lg">
                 <img src="./img/Sauron.png" alt="Sauron" class="w-full h-100 object-cover rounded-lg blur-sm hover:blur-none">
                 <h2 class="text-xl font-semibold mt-3">Sauron</h2>
                 <p class="text-gray-400">El Señor Oscuro que forjó los Anillos de Poder.</p>
+                <a href="#" class="mt-6 inline-block bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-lg">Conoce más de mi</a>
+
             </div>
             <div class="bg-gray-800 p-5 rounded-lg">
                 <img src="./img/Extraño.jpeg" alt="Elrond" class="w-full h-100 object-cover rounded-lg blur-sm hover:blur-none">
                 <h2 class="text-xl font-semibold mt-3">Extraño</h2>
                 <p class="text-gray-400">Un elfo sabio y estratega en tiempos de guerra.</p>
+                <a href="#" class="mt-6 inline-block bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-lg">Conoce más de mi</a>
+
+            </div>
+            <div class="bg-gray-800 p-5 rounded-lg">
+                <img src="./img/Bronwyn.png" alt="Elrond" class="w-full h-100 object-cover rounded-lg blur-sm hover:blur-none">
+                <h2 class="text-xl font-semibold mt-3">Bronwyn</h2>
+                <p class="text-gray-400">Un elfo sabio y estratega en tiempos de guerra.</p>
+                <a href="#" class="mt-6 inline-block bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-lg">Conoce más de mi</a>
+
             </div>
         </section>
     </main>
