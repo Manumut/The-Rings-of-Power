@@ -10,6 +10,9 @@
     @theme{
         --color-clifor: rgb(155,155,0);
         --color-video: rgb(229, 224, 124);
+        /* --breakpoint-med: 300rem; */
+        
+
     }
 </style>
 <body class="bg-gray-900 text-clifor">
@@ -19,8 +22,8 @@
                 <img src="./img/logo2.png" class="w-30 h-30">
                 <ul class="">
                     <li><a href="#Principales" class="hover:text-yellow-500">Principales</a></li>
-                    <li><a href="#" class="hover:text-yellow-500">Historia</a></li>
-                    <li><a href="#" class="hover:text-yellow-500">Personajes</a></li>
+                    <li><a href="#Anillos" class="hover:text-yellow-500">Anillos</a></li>
+                    <li><a href="#Conocer" class="hover:text-yellow-500">Sabe más</a></li>
                     <li><a href="#" class="hover:text-yellow-500">Contacto</a></li>
                 </ul>
             </div>
@@ -75,46 +78,59 @@
         </section>
 
         <!-- En esta seccion hablare sobre los anillos. Estara la imagen de los anilos y la explicacion sobre los anillos -->
-        <section class="grid lg:grid-cols-2 md:grid-cols-1 mt-10 items-center">
+        <section id="Anillos">
             <div>
-                <img src="./img/anillo.png" alt="">
-            </div>
-            <div>
+                <img src="./img/anillo.png" alt="" class="">
                 <h1 class="text-4xl font-bold mb-4 hover:underline decoration-4">Los 20 Anillos de Poder y su Propósito</h1>
-                <p class="">
-                    Los Tres Anillos Élficos (forjados sin la intervención directa de Sauron):
+            </div>
+            
+            <div class="grid lg:grid-cols-2 md:grid-cols-1 mt-10 items-center">               
+                <div >
+                    <img src="/img/elfos.jpeg" class="float-left "  >
+                    <p class="clear-none "> Los Tres Anillos Élficos (forjados sin la intervención directa de Sauron):
+                        
+                        Vilya (Anillo del Aire, azul) → Perteneció a Gil-Galad y luego a Elrond.
+                        Narya (Anillo del Fuego, rojo) → Entregado a Círdan y después a Gandalf.
+                        Nenya (Anillo del Agua, blanco) → Portado por Galadriel.
+                        Estos anillos no corrompían y estaban destinados a preservar la belleza y sabiduría de los elfos.</p>
                     
-                    Vilya (Anillo del Aire, azul) → Perteneció a Gil-Galad y luego a Elrond.
-                    Narya (Anillo del Fuego, rojo) → Entregado a Círdan y después a Gandalf.
-                    Nenya (Anillo del Agua, blanco) → Portado por Galadriel.
-                    Estos anillos no corrompían y estaban destinados a preservar la belleza y sabiduría de los elfos.</p>
-                    
+                </div>
+                
+                <div>
                     <p>Los Siete Anillos de los Enanos:
-                    
+            
                         Fueron dados a los líderes de los siete clanes enanos.
                         Aumentaban la riqueza de sus portadores, pero también intensificaban su avaricia.
                         No los corrompieron como a los hombres, ya que los enanos eran resistentes al control de Sauron.
                         Con el tiempo, casi todos fueron destruidos o recuperados por Sauron.</p> 
+    
+                </div>
 
+                <div>
                     <p>Los Nueve Anillos de los Hombres:
+                
+                    Fueron entregados a reyes y señores humanos, otorgándoles poder y longevidad.
+                    Sin embargo, los convirtieron en Nazgûl (Espectros del Anillo), sirvientes de Sauron esclavizados por su voluntad.</p>
                     
-                        Fueron entregados a reyes y señores humanos, otorgándoles poder y longevidad.
-                        Sin embargo, los convirtieron en Nazgûl (Espectros del Anillo), sirvientes de Sauron esclavizados por su voluntad.</p>
-                    
+                </div>
+                
+                <div>
                     <p>
-                        El Anillo Único:
+                    El Anillo Único:
                     
                     Fue forjado en secreto por Sauron en el Monte del Destino.
                     Contenía una parte significativa de su poder, lo que le permitió dominar a los otros anillos.
                     Su propósito era controlar a todos los portadores de los demás anillos y someterlos a su voluntad.</p>
+                </div>
+                
             </div>
 
         </section>
 
-        <section class="container mx-auto">
+        <section id="Conocer" class="container mx-auto">
             <div>
                 <h1 class="text-4xl font-bold m-4">Personajes principales</h1>
-                <div id="Galadriel" class="flex flex-col p-2 items-center border-t-4 border-amber-50  xl:flex-row">
+                <div id="Galadriel" class="flex flex-col p-2 items-center border-t-1 border-amber-50  xl:flex-row">
                     <img src="./img/Galadriel2.jpg" class="w-100 h-100 object-cover rounded-lg mt-4 scale-76 transition duration-600 hover:rotate-z-360 hover:rotate-y-200 md:scale-100">
                     <h2 class="text-xl font-semibold px-4 mt-4 hover:uppercase xl:m-auto xl:hover:capitalize">Galadriel</h2>
                     <p class="text-gray-400 mt-4 px-4 xl:mt-10">Galadriel es una de las protagonistas principales de la serie Los Anillos del Poder. Se la presenta como una guerrera decidida y obsesionada con erradicar el mal. Las historias relacionadas con ella en la serie son buscar a Sauron, su relacion con Halbrand y la creacion de los Tres Anillos Élficos, de los cuales se apropiaria de <span>Nenya</span>, uno de esos tres anillos.
@@ -123,7 +139,7 @@
                     
                 </div>
 
-                <div id="Extraño" class="flex flex-col border-t-4 border-amber-50 p-2 items-center xl:flex-row ">
+                <div id="Extraño" class="flex flex-col border-t-1 border-amber-50 p-2 items-center xl:flex-row ">
                     <img src="./img/extranio.webp" class="w-100 h-100 object-cover rounded-lg mt-4 scale-76 transition duration-600 hover:rotate-z-360  md:scale-100">
                     <h2 class="text-xl font-semibold px-4 mt-4 hover:uppercase xl:m-auto xl:hover:capitalize">Extraño</h2>
                     <p class="text-gray-400 mt-4 px-4 xl:mt-10">El Extraño en Los Anillos de Poder
@@ -133,7 +149,7 @@
                     
                 </div>
 
-                <div id="Halbrand" class="flex flex-col border-y-4 border-amber-50 p-2 items-center xl:flex-row ">
+                <div id="Halbrand" class="flex flex-col border-y-1 border-amber-50 p-2 items-center xl:flex-row ">
                     <img src="./img/halbrand.png" class="w-100 h-100 object-cover rounded-lg mt-4 scale-76 transition duration-600 hover:rotate-x-360  md:scale-100">
                     <h2 class="text-xl font-semibold px-4 mt-4 hover:uppercase xl:m-auto xl:hover:capitalize">Halbrand </h2>
                     <p class="text-gray-400 mt-4 px-4 xl:mt-10">Halbrand es un personaje presentado inicialmente como un misterioso hombre del Sur con un pasado turbulento. Sin embargo, a lo largo de la serie, su verdadera identidad y propósito se van revelando, convirtiéndolo en uno de los personajes más impactantes de la historia. Tras traicionar a Galadriel, Halbrand se convierte en Annatar y va con Celebrimbor a engañarlo para que haga los Anillos de Poder para que así se cumpla el plan de Annatar, el cual en verdad es Sauron.
@@ -141,12 +157,13 @@
                     <!-- <img src="./img/sYc1.jpg" class="w-100 h-100 object-cover rounded-lg mt-4 img-center hover:grayscale "> -->
 
                     <!-- CAMBIAR -->
-                    <div class=" w-600 h-100 ">
-                        <img src="./img/sYc1.jpg" class=" w-100 h-100 object-cover rounded-lg mt-4 img-center  inset-0 transition-opacity duration-600 opacity-100 hover:opacity-0">
-                        <img src="./img/ani.jfif" class=" w-100 h-100 object-cover rounded-lg mt-4 img-center  inset-0 transition-opacity duration-600 opacity-0 hover:opacity-100">  
+                    <div class="relative w-100 h-100 xl:w-600 ">
+                        <!-- Imagen inicial -->
+                        <img src="./img/sYc1.jpg" class="absolute w-full h-full object-cover rounded-lg transition-opacity duration-500 opacity-100 hover:opacity-0">
+                        <!-- Imagen que aparece al hacer hover -->
+                        <img src="./img/ani.jfif" class="absolute w-full h-full object-cover rounded-lg transition-opacity duration-500 opacity-0 hover:opacity-100">
                     </div>
-
-                    
+                                        
                 </div>
                 
             </div>
