@@ -17,15 +17,32 @@
 </style>
 <body class="bg-gray-900 text-clifor">
     <header class="bg-gray-700 p-5 text-center ">
-        <nav class="py-4">
-            <div class="container mx-auto flex justify-between">
-                <img src="./img/logo2.png" class="w-30 h-30">
-                <ul class="">
-                    <li><a href="#Principales" class="hover:text-yellow-500">Principales</a></li>
-                    <li><a href="#Anillos" class="hover:text-yellow-500">Anillos</a></li>
-                    <li><a href="#Conocer" class="hover:text-yellow-500">Sabe más</a></li>
-                    <li><a href="#" class="hover:text-yellow-500">Contacto</a></li>
+        <nav >
+            <div class=" mx-auto flex justify-between items-center">
+                <div class="text-white text-xl font-bold">MiLogo</div>
+    
+                <!-- Menu normal -->
+                <ul class="hidden md:flex space-x-6 text-white">
+                    <li><a href="#" class="hover:text-blue-300">Inicio</a></li>
+                    <li><a href="#" class="hover:text-blue-300">Servicios</a></li>
+                    <li><a href="#" class="hover:text-blue-300">Acerca</a></li>
+                    <li><a href="#" class="hover:text-blue-300">Contacto</a></li>
                 </ul>
+    
+                <!-- Botón Hamburguesa -->
+                <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+    
+            <!-- Menú móvil -->
+            <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-4 p-4 bg-blue-700 text-white">
+                <a href="#" class="hover:text-blue-300">Inicio</a>
+                <a href="#" class="hover:text-blue-300">Servicios</a>
+                <a href="#" class="hover:text-blue-300">Acerca</a>
+                <a href="#" class="hover:text-blue-300">Contacto</a>
             </div>
         </nav>
         
@@ -78,53 +95,66 @@
         </section>
 
         <!-- En esta seccion hablare sobre los anillos. Estara la imagen de los anilos y la explicacion sobre los anillos -->
-        <section id="Anillos">
-            <div>
-                <img src="./img/anillo.png" alt="" class="">
+        <section id="Anillos" class="p-8 item">
+            <div class="text-center mb-10">
+                <img src="./img/anillo.png" alt="Anillo" class="mx-auto w-24 mb-4">
                 <h1 class="text-4xl font-bold mb-4 hover:underline decoration-4">Los 20 Anillos de Poder y su Propósito</h1>
             </div>
-            
-            <div class="grid lg:grid-cols-2 md:grid-cols-1 mt-10 items-center">               
-                <div >
-                    <img src="/img/elfos.jpeg" class="float-left "  >
-                    <p class="clear-none "> Los Tres Anillos Élficos (forjados sin la intervención directa de Sauron):
-                        
-                        Vilya (Anillo del Aire, azul) → Perteneció a Gil-Galad y luego a Elrond.
-                        Narya (Anillo del Fuego, rojo) → Entregado a Círdan y después a Gandalf.
-                        Nenya (Anillo del Agua, blanco) → Portado por Galadriel.
-                        Estos anillos no corrompían y estaban destinados a preservar la belleza y sabiduría de los elfos.</p>
-                    
+        
+            <div class="grid lg:grid-cols-2 md:grid-cols-1 gap-8">
+                <!-- Anillos Élficos -->
+                <div class="flex items-start space-x-4">
+                    <img src="./img/elfos.jpeg" alt="Anillos Élficos" class="w-32 h-32 object-cover rounded-lg shadow-lg">
+                    <div>
+                        <h2 class="text-xl font-semibold mb-2">Los Tres Anillos Élficos</h2>
+                        <p class="text-sm">
+                            - Vilya (Anillo del Aire, azul): Gil-Galad → Elrond.<br>
+                            - Narya (Anillo del Fuego, rojo): Círdan → Gandalf.<br>
+                            - Nenya (Anillo del Agua, blanco): Galadriel.<br>
+                            Destinados a preservar belleza y sabiduría.
+                        </p>
+                    </div>
                 </div>
-                
-                <div>
-                    <p>Los Siete Anillos de los Enanos:
-            
-                        Fueron dados a los líderes de los siete clanes enanos.
-                        Aumentaban la riqueza de sus portadores, pero también intensificaban su avaricia.
-                        No los corrompieron como a los hombres, ya que los enanos eran resistentes al control de Sauron.
-                        Con el tiempo, casi todos fueron destruidos o recuperados por Sauron.</p> 
-    
+        
+                <!-- Anillos de los Enanos -->
+                <div class="flex items-start space-x-4">
+                    <img src="./img/enanos.png" alt="Anillos de los Enanos" class="w-32 h-32 object-cover rounded-lg shadow-lg">
+                    <div>
+                        <h2 class="text-xl font-semibold mb-2">Los Siete Anillos de los Enanos</h2>
+                        <p class="text-sm">
+                            - Otorgados a los líderes de siete clanes.<br>
+                            - Aumentaban riqueza pero intensificaban avaricia.<br>
+                            - Resistieron la corrupción pero casi todos fueron destruidos.
+                        </p>
+                    </div>
                 </div>
-
-                <div>
-                    <p>Los Nueve Anillos de los Hombres:
-                
-                    Fueron entregados a reyes y señores humanos, otorgándoles poder y longevidad.
-                    Sin embargo, los convirtieron en Nazgûl (Espectros del Anillo), sirvientes de Sauron esclavizados por su voluntad.</p>
-                    
+        
+                <!-- Anillos de los Hombres -->
+                <div class="flex items-start space-x-4">
+                    <img src="./img/hombres.png" alt="Anillos de los Hombres" class="w-32 h-32 object-cover rounded-lg shadow-lg">
+                    <div>
+                        <h2 class="text-xl font-semibold mb-2">Los Nueve Anillos de los Hombres</h2>
+                        <p class="text-sm">
+                            - Dieron poder y longevidad a reyes humanos.<br>
+                            - Los transformaron en Nazgûl, sirvientes de Sauron.<br>
+                            - Perdieron su voluntad y quedaron esclavizados.
+                        </p>
+                    </div>
                 </div>
-                
-                <div>
-                    <p>
-                    El Anillo Único:
-                    
-                    Fue forjado en secreto por Sauron en el Monte del Destino.
-                    Contenía una parte significativa de su poder, lo que le permitió dominar a los otros anillos.
-                    Su propósito era controlar a todos los portadores de los demás anillos y someterlos a su voluntad.</p>
+        
+                <!-- El Anillo Único -->
+                <div class="flex items-start space-x-4">
+                    <img src="./img/ani.jfif" alt="El Anillo Único" class="w-32 h-32 object-cover rounded-lg shadow-lg">
+                    <div>
+                        <h2 class="text-xl font-semibold mb-2">El Anillo Único</h2>
+                        <p class="text-sm">
+                            - Forjado por Sauron en el Monte del Destino.<br>
+                            - Contenía parte de su poder para dominar los otros anillos.<br>
+                            - Su propósito: someter a toda la Tierra Media bajo su voluntad.
+                        </p>
+                    </div>
                 </div>
-                
             </div>
-
         </section>
 
         <section id="Conocer" class="container mx-auto">
@@ -174,10 +204,65 @@
                 <img src="./img/sYc.jpg" class=" absolute inset-0 w-full h-full transition-opacity duration-300 opacity-0 group-hover:opacity-100">
             </div>
         </section> -->
+
+
+        <!-- Sección de Lugares Icónicos -->
+<section id="LugaresIconicos" class="p-8 bg-gray-900 text-white">
+    <div class="text-center mb-6">
+        <h2 class="text-3xl font-bold mb-4">Lugares Icónicos de la Tierra Media</h2>
+        <p class="text-gray-300">Explora algunos de los escenarios más memorables de la saga.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+        <!-- Rivendel -->
+        <div class="bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition">
+            <img src="./img/rivendel.jpg" alt="Rivendel" class="w-full h-48 object-cover rounded-md mb-3">
+            <h3 class="text-xl font-semibold mb-2">Rivendel</h3>
+            <p class="text-sm text-gray-400">El refugio de los elfos, conocido por su belleza y sabiduría eterna.</p>
+        </div>
+        <!-- Mordor -->
+        <div class="bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition">
+            <img src="./img/mordor.jpg" alt="Mordor" class="w-full h-48 object-cover rounded-md mb-3">
+            <h3 class="text-xl font-semibold mb-2">Mordor</h3>
+            <p class="text-sm text-gray-400">La oscura tierra donde se forjó el Anillo Único.</p>
+        </div>
+        <!-- La Comarca -->
+        <div class="bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition">
+            <img src="./img/comarca.jpg" alt="La Comarca" class="w-full h-48 object-cover rounded-md mb-3">
+            <h3 class="text-xl font-semibold mb-2">La Comarca</h3>
+            <p class="text-sm text-gray-400">El hogar de los Hobbits, lleno de paz y sencillez.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Curiosidades -->
+<section id="Curiosidades" class="p-8 bg-gray-800 text-white mt-10">
+    <div class="text-center mb-6">
+        <h2 class="text-3xl font-bold mb-4">Curiosidades de los Anillos de Poder</h2>
+        <p class="text-gray-300">Descubre algunos datos fascinantes sobre el universo creado por Tolkien.</p>
+    </div>
+    <div class="max-w-3xl mx-auto">
+        <ul class="list-disc list-inside space-y-4 text-gray-300">
+            <li><span class="text-yellow-400">¿Sabías que?</span> Los tres anillos élficos nunca fueron tocados por Sauron.</li>
+            <li><span class="text-yellow-400">Interesante:</span> El Anillo Único solo tiene inscripciones visibles cuando se calienta.</li>
+            <li><span class="text-yellow-400">Dato curioso:</span> El idioma de Mordor fue creado especialmente para el Anillo Único.</li>
+            <li><span class="text-yellow-400">Sorpresa:</span> El personaje de Gandalf usó Narya, el anillo de fuego, para inspirar valor.</li>
+        </ul>
+    </div>
+</section>
+
     </main>
     
     <footer class="bg-gray-800 p-5 text-center mt-10">
         &copy; 2025 Los Anillos del Poder. Todos los derechos reservados.
     </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
