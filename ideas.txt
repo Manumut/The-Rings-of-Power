@@ -6,7 +6,7 @@ explicacion sobre los anillos
 
 
 
-
+ME FALTA EL MENU, LA ULTIMA SECCION QU QUIERO Q SEA MODO DESPLEGABLE Y PONER UN FOOTER INTERESANTE
 
 
 https://codepen.io/ --> Mirar ideas para añadir
