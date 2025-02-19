@@ -19,17 +19,17 @@
         <nav >
             <div class=" mx-auto flex justify-between items-center">
                 <div class="text-white text-xl font-bold">
-                    <img src="./img/logo2.png" alt="" class="w-20 h-40">
+                    <img src="./img/logo2.png" alt="" class="w-20 h-20">
                 </div>
     
                 <ul class="hidden md:flex space-x-6 text-white">
-                    <li><a href="#" class="hover:text-blue-300">Inicio</a></li>
-                    <li><a href="#Principales" class="hover:text-blue-300">Actores principales</a></li>
-                    <li><a href="#Anillos" class="hover:text-blue-300">Anillos Poderosos</a></li>
+                    <li><a href="#" class="hover:text-clifor">Inicio</a></li>
+                    <li><a href="#Principales" class="hover:text-clifor">Actores principales</a></li>
+                    <li><a href="#Anillos" class="hover:text-clifor">Anillos Poderosos</a></li>
                     <li><a href="#LugaresIconicos" class="hover:text-clifor">Iconografía</a></li>
                 </ul>
     
-                <button id="menu-btn" class="md:hidden text-white ">
+                <button id="menu-btn" class="md:hidden text-white hover:text-clifor ">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
@@ -47,13 +47,11 @@
     </header>
     
     <main class=" mx-auto">
-        <!-- Video de fondo -->
-        
+
 
         <section class="mb-100 text-center">
             <div class=" w-full h-60 z-0 flex justify-center ">
                 <iframe  width="1280" height="720" src="https://www.youtube.com/embed/lXuWnfnZmhA" title="Rings of Power (2022) Opening Credits (GH)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <!-- class="scale-70 md:scale-100" CLASE Q PODRIA AÑADIR AL VIDEO PERO NS COMO -->
              </div>
             <div class="flex flex-col justify-center">
                 <h1 class="text-4xl font-bold mb-4">Explora la Tierra Media</h1>
@@ -93,16 +91,14 @@
             </div>
         </section>
 
-        <!-- En esta seccion hablare sobre los anillos. Estara la imagen de los anilos y la explicacion sobre los anillos -->
         <section id="Anillos" class="p-8 item">
             <div class="text-center mb-10">
                 <h1 class="mx-auto text-4xl font-bold mb-4  decoration-4 bg-[url(./img/anillo.png)] scale-70 w-148 h-82 sm:scale-100 hover:underline">Los 20 Anillos de Poder y su Propósito</h1>
             </div>
         
             <div class="grid lg:grid-cols-2 md:grid-cols-1 gap-8 ">
-                <!-- Anillos Élficos -->
-                <div class="flex items-start space-x-4 mx-auto">
-                    <img src="./img/elfos.jpeg" alt="Anillos Élficos" class="w-32 h-32 object-cover rounded-lg shadow-lg hover:animate-spin transition ">
+                <div class="flex items-start mx-auto">
+                    <img src="./img/elfos.jpeg" alt="Anillos Élficos" class="w-32 h-32 object-cover rounded-lg shadow-lg mx-6 hover:animate-spin transition ">
                     <div>
                         <h2 class="text-xl font-semibold mb-2">Los Tres Anillos Élficos</h2>
                         <p class="text-sm">
@@ -114,9 +110,8 @@
                     </div>
                 </div>
         
-                <!-- Anillos de los Enanos -->
-                <div class="flex items-start space-x-4 ">
-                    <img src="./img/enanos.png" alt="Anillos de los Enanos" class="w-32 h-32 object-cover rounded-lg shadow-lg hover:w-50 hover:h-50 md:hover:h-60 md:hover:w-80 ">
+                <div class="flex items-start ">
+                    <img src="./img/enanos.png" alt="Anillos de los Enanos" class="w-32 h-32 object-cover rounded-lg shadow-lg mx-6 hover:w-50 hover:h-50 md:hover:h-60 md:hover:w-80 ">
                     <div>
                         <h2 class="text-xl font-semibold mb-2">Los Siete Anillos de los Enanos</h2>
                         <p class="text-sm">
@@ -127,9 +122,8 @@
                     </div>
                 </div>
         
-                <!-- Anillos de los Hombres -->
-                <div class="flex items-start space-x-4 mx-auto">
-                    <img src="./img/hombres.png" alt="Anillos de los Hombres" class="w-32 h-32 object-cover rounded-lg shadow-lg hover:w-50 hover:h-50 xl:hover:w-120 xl:hover:h-40 sm:hover:w-120 sm:hover:h-40 transition">
+                <div class="flex items-start mx-auto">
+                    <img src="./img/hombres.png" alt="Anillos de los Hombres" class="w-32 h-32 object-cover rounded-lg shadow-lg mx-6 hover:w-50 hover:h-50 xl:hover:w-120 xl:hover:h-40 sm:hover:w-120 sm:hover:h-40 transition">
                     <div>
                         <h2 class="text-xl font-semibold mb-2">Los Nueve Anillos de los Hombres</h2>
                         <p class="text-sm">
@@ -141,8 +135,8 @@
                 </div>
         
                 <!-- El Anillo Único -->
-                <div class="flex items-start space-x-4 ">
-                    <img src="./img/ani.jfif" alt="El Anillo Único" class="w-32 h-32 object-cover rounded-lg shadow-lg hover:invert">
+                <div class="flex items-start ">
+                    <img src="./img/ani.jfif" alt="El Anillo Único" class="w-32 h-32 object-cover rounded-lg shadow-lg mx-6 hover:invert">
                     <div>
                         <h2 class="text-xl font-semibold mb-2">El Anillo Único</h2>
                         <p class="text-sm">
