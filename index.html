@@ -9,45 +9,42 @@
 <style type="text/tailwindcss">
     @theme{
         --color-clifor: rgb(155,155,0);
-        --color-video: rgb(229, 224, 124);
-        /* --breakpoint-med: 300rem; */
-        
+        --color-video: rgb(229, 224, 124);      
         
 
     }
 </style>
 <body class="bg-gray-900 text-clifor">
-    <!--<header class="bg-gray-700 p-5 text-center ">
+    <header class="bg-gray-700 p-5 text-center sticky top-0 z-999">
         <nav >
             <div class=" mx-auto flex justify-between items-center">
-                <div class="text-white text-xl font-bold">MiLogo</div>
+                <div class="text-white text-xl font-bold">
+                    <img src="./img/logo2.png" alt="" class="w-20 h-40">
+                </div>
     
-                 Menu normal 
                 <ul class="hidden md:flex space-x-6 text-white">
                     <li><a href="#" class="hover:text-blue-300">Inicio</a></li>
-                    <li><a href="#" class="hover:text-blue-300">Servicios</a></li>
-                    <li><a href="#" class="hover:text-blue-300">Acerca</a></li>
-                    <li><a href="#" class="hover:text-blue-300">Contacto</a></li>
+                    <li><a href="#Principales" class="hover:text-blue-300">Actores principales</a></li>
+                    <li><a href="#Anillos" class="hover:text-blue-300">Anillos Poderosos</a></li>
+                    <li><a href="#LugaresIconicos" class="hover:text-clifor">Iconografía</a></li>
                 </ul>
     
-                Botón Hamburguesa 
-                <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+                <button id="menu-btn" class="md:hidden text-white ">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
                 </button>
             </div>
     
-             Menú móvil 
-            <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-4 p-4 bg-blue-700 text-white">
-                <a href="#" class="hover:text-blue-300">Inicio</a>
-                <a href="#" class="hover:text-blue-300">Servicios</a>
-                <a href="#" class="hover:text-blue-300">Acerca</a>
-                <a href="#" class="hover:text-blue-300">Contacto</a>
+            <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-4 p-4  text-white">
+                <a href="#" class="hover:text-clifor">Inicio</a>
+                <a href="#Principales" class="hover:text-clifor">Actores principales</a>
+                <a href="#Anillos" class="hover:text-clifor">Anillos Poderosos</a>
+                <a href="#LugaresIconicos" class="hover:text-clifor">Iconografía</a>
             </div>
         </nav>
         
-    </header> -->
+    </header>
     
     <main class=" mx-auto">
         <!-- Video de fondo -->
@@ -185,13 +182,12 @@
                     <h2 class="text-xl font-semibold px-4 mt-4 hover:uppercase xl:m-auto xl:hover:capitalize">Halbrand </h2>
                     <p class="text-gray-400 mt-4 px-4 xl:mt-10">Halbrand es un personaje presentado inicialmente como un misterioso hombre del Sur con un pasado turbulento. Sin embargo, a lo largo de la serie, su verdadera identidad y propósito se van revelando, convirtiéndolo en uno de los personajes más impactantes de la historia. Tras traicionar a Galadriel, Halbrand se convierte en Annatar y va con Celebrimbor a engañarlo para que haga los Anillos de Poder para que así se cumpla el plan de Annatar, el cual en verdad es Sauron.
                     </p>
-                    <!-- <img src="./img/sYc1.jpg" class="w-100 h-100 object-cover rounded-lg mt-4 img-center hover:grayscale "> -->
 
-                    <!-- CAMBIAR -->
+                    
                     <div class="relative w-100 h-100 xl:w-600 ">
-                        <!-- Imagen inicial -->
+
                         <img src="./img/sYc1.jpg" class="absolute w-full h-full object-cover rounded-lg transition-opacity duration-500 opacity-100 hover:opacity-0">
-                        <!-- Imagen que aparece al hacer hover -->
+                        
                         <img src="./img/ani.jfif" class="absolute w-full h-full object-cover rounded-lg transition-opacity duration-500 opacity-0 hover:opacity-100">
                     </div>
                                         
